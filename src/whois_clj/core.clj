@@ -32,7 +32,7 @@
                                         [% v])
                                       v))))))))
 
-(defn get-whois [host]
+(defn whois [host]
   (let [client (new WhoisClient)
         _      (.connect client WhoisClient/DEFAULT_HOST)
         result (.query client host)]

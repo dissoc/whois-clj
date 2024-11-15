@@ -1,0 +1,30 @@
+#+TITLE:     whois-clj
+#+SUBTITLE:  clojure whois client
+#+KEYWORDS:  clojure, whois
+#+LANGUAGE:  en
+
+simple whois client for clojure
+
+* installation
+** Leiningen
+#+BEGIN_SRC clojure
+[whois-clj "0.1.0-SNAPSHOT"]
+#+END_SRC
+
+* building
+from the root of the project, run:
+
+#+begin_src sh
+lein install
+#+end_src
+
+* usage
+
+#+BEGIN_SRC clojure
+  (:require [whois-clj.core :refer [whois]])
+
+  (whois "google.com")
+#+END_SRC
+
+* license
+whois-clj is licensed under the Apache License, v2.
