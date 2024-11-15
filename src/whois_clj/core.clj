@@ -16,7 +16,7 @@
                  "NOTICE"
                  "TERMS OF USE"})
 
-(defn parser
+(defn parse
   "basic parser"
   [response]
   (loop [elements (split-lines response)
@@ -36,4 +36,4 @@
   (let [client (new WhoisClient)
         _      (.connect client WhoisClient/DEFAULT_HOST)
         result (.query client host)]
-    (parser result)))
+    (parse result)))
