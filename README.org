@@ -26,5 +26,32 @@ lein install
   (whois "google.com")
 #+END_SRC
 
+* output
+
+#+BEGIN_SRC clojure
+{:dnssec "unsigned",
+ :updated-date "2019-09-09T15",
+ :domain-status
+ ["clientDeleteProhibited https"
+  "clientTransferProhibited https"
+  "clientUpdateProhibited https"
+  "serverDeleteProhibited https"
+  "serverTransferProhibited https"
+  "serverUpdateProhibited https"],
+ :name-server
+ ["NS1.GOOGLE.COM"
+  "NS2.GOOGLE.COM"
+  "NS3.GOOGLE.COM"
+  "NS4.GOOGLE.COM"],
+ :registrar "MarkMonitor Inc.",
+ :registry-expiry-date "2028-09-14T04",
+ :registry-domain-id "2138514_DOMAIN_COM-VRSN",
+ :registrar-url "http",
+ :registrar-whois-server "whois.markmonitor.com",
+ :registrar-iana-id "292",
+ :domain-name "GOOGLE.COM",
+ :creation-date "1997-09-15T04"}
+#+END_SRC
+
 * license
 whois-clj is licensed under the Apache License, v2.
